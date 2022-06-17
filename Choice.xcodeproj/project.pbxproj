@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		964D9076283745EF0066E39F /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D9075283745EF0066E39F /* StoryView.swift */; };
+		964D9078283746190066E39F /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D9077283746190066E39F /* FavoritesView.swift */; };
+		964D907A283746220066E39F /* FunFactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964D9079283746220066E39F /* FunFactsView.swift */; };
+		965F3FDE2818FD74008DADEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 965F3FE02818FD74008DADEE /* InfoPlist.strings */; };
 		966C59292817D6D300A3BAAA /* ChoiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59282817D6D300A3BAAA /* ChoiceApp.swift */; };
 		966C592B2817D6D300A3BAAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C592A2817D6D300A3BAAA /* ContentView.swift */; };
 		966C592D2817D6D600A3BAAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966C592C2817D6D600A3BAAA /* Assets.xcassets */; };
@@ -14,6 +18,8 @@
 		966C593A2817D6D600A3BAAA /* ChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59392817D6D600A3BAAA /* ChoiceTests.swift */; };
 		966C59442817D6D600A3BAAA /* ChoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59432817D6D600A3BAAA /* ChoiceUITests.swift */; };
 		966C59462817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59452817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift */; };
+		96C0D75C281F962D00CDB72C /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75B281F962D00CDB72C /* FriendList.swift */; };
+		96C0D75E281F979E00CDB72C /* myself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75D281F979E00CDB72C /* myself.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		964D9075283745EF0066E39F /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		964D9077283746190066E39F /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		964D9079283746220066E39F /* FunFactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsView.swift; sourceTree = "<group>"; };
+		965F3FDF2818FD74008DADEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		965F3FE12818FE91008DADEE /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		966C59252817D6D300A3BAAA /* Choice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Choice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966C59282817D6D300A3BAAA /* ChoiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceApp.swift; sourceTree = "<group>"; };
 		966C592A2817D6D300A3BAAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +55,8 @@
 		966C593F2817D6D600A3BAAA /* ChoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966C59432817D6D600A3BAAA /* ChoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceUITests.swift; sourceTree = "<group>"; };
 		966C59452817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96C0D75B281F962D00CDB72C /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		96C0D75D281F979E00CDB72C /* myself.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myself.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +109,12 @@
 			children = (
 				966C59282817D6D300A3BAAA /* ChoiceApp.swift */,
 				966C592A2817D6D300A3BAAA /* ContentView.swift */,
+				964D9077283746190066E39F /* FavoritesView.swift */,
+				964D9079283746220066E39F /* FunFactsView.swift */,
+				96C0D75D281F979E00CDB72C /* myself.swift */,
+				964D9075283745EF0066E39F /* StoryView.swift */,
+				96C0D75B281F962D00CDB72C /* FriendList.swift */,
+				965F3FE02818FD74008DADEE /* InfoPlist.strings */,
 				966C592C2817D6D600A3BAAA /* Assets.xcassets */,
 				966C592E2817D6D600A3BAAA /* Preview Content */,
 			);
@@ -213,6 +232,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 966C591C2817D6D300A3BAAA;
 			productRefGroup = 966C59262817D6D300A3BAAA /* Products */;
@@ -232,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				966C59302817D6D600A3BAAA /* Preview Assets.xcassets in Resources */,
+				965F3FDE2818FD74008DADEE /* InfoPlist.strings in Resources */,
 				966C592D2817D6D600A3BAAA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964D9076283745EF0066E39F /* StoryView.swift in Sources */,
 				966C592B2817D6D300A3BAAA /* ContentView.swift in Sources */,
+				964D9078283746190066E39F /* FavoritesView.swift in Sources */,
+				964D907A283746220066E39F /* FunFactsView.swift in Sources */,
 				966C59292817D6D300A3BAAA /* ChoiceApp.swift in Sources */,
+				96C0D75E281F979E00CDB72C /* myself.swift in Sources */,
+				96C0D75C281F962D00CDB72C /* FriendList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,11 +320,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		965F3FE02818FD74008DADEE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965F3FDF2818FD74008DADEE /* en */,
+				965F3FE12818FE91008DADEE /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		966C59472817D6D600A3BAAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -359,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -417,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Choice/Preview Content\"";
+				DEVELOPMENT_TEAM = K4FCGKWTDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -428,9 +469,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Choice";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.choice";
+				PRODUCT_NAME = Choice;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,6 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Choice/Preview Content\"";
+				DEVELOPMENT_TEAM = K4FCGKWTDF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -456,9 +498,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.Choice";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "-1.choice";
+				PRODUCT_NAME = Choice;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
