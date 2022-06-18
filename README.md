@@ -3,4 +3,6 @@
 
 Swift Playgrlounds 및 여러 블로그와 강의 사이트의 예제 코드 및 강의들을 참고하여 만들었습니다
 
+챗봇 코드 출처 : https://github.com/federicocotogno/ChatBotProject
+
 선택길 2022
