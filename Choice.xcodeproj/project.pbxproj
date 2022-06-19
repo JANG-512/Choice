@@ -21,6 +21,7 @@
 		96AB5DFB285F27CB00468B27 /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB5DFA285F27CB00468B27 /* BotResponse.swift */; };
 		96C0D75C281F962D00CDB72C /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75B281F962D00CDB72C /* FriendList.swift */; };
 		96C0D75E281F979E00CDB72C /* myself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75D281F979E00CDB72C /* myself.swift */; };
+		96E5C5A8285F50AC00A9B8F8 /* timedate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5C5A7285F50AC00A9B8F8 /* timedate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		96AB5DFA285F27CB00468B27 /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BotResponse.swift; path = ../../../../../Users/saram/Documents/BotResponse.swift; sourceTree = "<group>"; };
 		96C0D75B281F962D00CDB72C /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		96C0D75D281F979E00CDB72C /* myself.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myself.swift; sourceTree = "<group>"; };
+		96E5C5A7285F50AC00A9B8F8 /* timedate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timedate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				966C59282817D6D300A3BAAA /* ChoiceApp.swift */,
 				966C592A2817D6D300A3BAAA /* ContentView.swift */,
 				96AB5DFA285F27CB00468B27 /* BotResponse.swift */,
+				96E5C5A7285F50AC00A9B8F8 /* timedate.swift */,
 				964D9077283746190066E39F /* FavoritesView.swift */,
 				964D9079283746220066E39F /* FunFactsView.swift */,
 				96C0D75D281F979E00CDB72C /* myself.swift */,
@@ -283,6 +286,7 @@
 			files = (
 				96AB5DFB285F27CB00468B27 /* BotResponse.swift in Sources */,
 				964D9076283745EF0066E39F /* StoryView.swift in Sources */,
+				96E5C5A8285F50AC00A9B8F8 /* timedate.swift in Sources */,
 				966C592B2817D6D300A3BAAA /* ContentView.swift in Sources */,
 				964D9078283746190066E39F /* FavoritesView.swift in Sources */,
 				964D907A283746220066E39F /* FunFactsView.swift in Sources */,

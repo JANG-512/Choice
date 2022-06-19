@@ -115,8 +115,8 @@ struct NextView: View {
         @State private var selection = 0
         @State private var name = ""
         @State private var messageText = ""
-        @State var messages: [String] = ["안녕하세요, 어떤 선택을 도와드릴까요?"]
-        
+        @State var messages: [String] = ["어떤 선택을 도와드릴까요?"]
+        //인트로 메시지
         var body: some View {
             VStack {
                 HStack {
@@ -129,7 +129,7 @@ struct NextView: View {
                     ForEach(messages, id: \.self) { message in
                         if message.contains("[USER]") {
                             let newMessage = message.replacingOccurrences(of: "[USER]", with: "")
-                            
+                            //USER 메시지 말풍선 파트, 사용자명은 변경가능
                             HStack {
                                 Spacer()
                                 Text(newMessage)
@@ -178,12 +178,14 @@ struct NextView: View {
         func sendMessage(message: String) {
             withAnimation {
                 messages.append("[USER]" + message)
+                //사용자명+'메시지 내용' 표시
                 self.messageText = ""
             }
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 withAnimation {
                     messages.append(getBotResponse(message: message))
+                    //BotResponse.swift 에서 알맞는 답변 전송
                 }
         }
             
