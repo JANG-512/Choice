@@ -114,69 +114,79 @@ struct NextView: View {
         }
         @State private var selection = 0
         @State private var name = ""
-        @State private var showingAlert = false
+        @State private var messageText = ""
+        @State var messages: [String] = ["안녕하세요, 어떤 선택을 도와드릴까요?"]
+        
         var body: some View {
-            VStack{
-                //TabView(selection: $selection) {
-                Image("whatuwant")
-                    .resizable()
-                    .frame(width:450 , height: 250, alignment: .center)
-                    .offset(x: 0, y: -70)
-                //Spacer()
-                    Form {
-                        TextField("선택지", text : $name)
-                            .disableAutocorrection(true)
-                            .ignoresSafeArea(.keyboard, edges: .bottom)
-                        Text("당신이 원하는 선택은 \(name)")
-                        
-                        
-                    }
-                    .offset(x: 0, y: -145)
-                        //.tabItem {
-                            //Image(systemName: "house.fill")
-                            //Text("선택")
+            VStack {
+                HStack {
+                    //Text("선택길")
+                        //.font(.largeTitle)
+                        //.bold()
+                }
                 
-                Button(action: {
-                    self.showingAlert = true
-                } ) {
-                    Text("제출")
-                        .foregroundColor(.white)
+                ScrollView {
+                    ForEach(messages, id: \.self) { message in
+                        if message.contains("[USER]") {
+                            let newMessage = message.replacingOccurrences(of: "[USER]", with: "")
+                            
+                            HStack {
+                                Spacer()
+                                Text(newMessage)
+                                    .padding()
+                                    .foregroundColor(.white)
+                                    .background(.blue.opacity(0.8))
+                                    .cornerRadius(20)
+                                    .padding(.horizontal, 16)
+                                    .padding(.bottom, 10)
+                            }
+                        } else {
+                            HStack {
+                                Text(message)
+                                    .padding()
+                                    .background(.gray.opacity(0.15))
+                                    .cornerRadius(20)
+                                    .padding(.horizontal, 16)
+                                    .padding(.bottom, 10)
+                                Spacer()
+                            }
+                        }
+                    }.rotationEffect(.degrees(180))
+                }.rotationEffect(.degrees(180))
+                    .background(Color.gray.opacity(0.10))
+                
+                HStack {
+                    TextField("여기에 질문을 입력하세요", text: $messageText)
                         .padding()
-                        .frame(width: 80, height: 80)
-                        .background(Color.black)
-                        .clipShape(Circle())
-                    
+                        .background(Color.gray.opacity(0.1))
+                        .cornerRadius(10)
+                        .onSubmit {
+                            sendMessage(message: messageText)
+                        }
+                    Button {
+                        sendMessage(message: messageText)
+                    } label: {
+                        Image(systemName: "paperplane.fill")
                     }
-                .offset(x: 0, y: -28)
-
-                .alert(isPresented: $showingAlert) {
-                    Alert(title: Text("선택길"), message: Text("그냥 하지 마."), dismissButton: .default(Text("닫기")))
-                    
-
+                    .font(.system(size: 26))
+                    .padding(.horizontal, 10)
+                }
+                .padding()
+            }
         }
-                //.background(Color.white)
-                        //.tag(0)
-                
-                    //Text("두번째 뷰")
-                        //.font(.system(size: 30))
-                        //.tabItem {
-                            //Image(systemName: "bookmark.circle.fill")
-                            //Text("선택")
-                        //}
-                        //.tag(1)
-                
-                    //Text("세번째 뷰")
-                        //.font(.system(size: 30))
-                        //.tabItem {
-                            //Image(systemName: "video.circle.fill")
-                            //Text("친구")
-                        //}
-                        //.tag(2)
-                //}
-            //}
-        //}
-    }
-            .colorScheme(.light)
+        func sendMessage(message: String) {
+            withAnimation {
+                messages.append("[USER]" + message)
+                self.messageText = ""
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation {
+                    messages.append(getBotResponse(message: message))
+                }
+        }
+            
+            
             //.background(Color.white)
 }
         //이 아래부터는 친구창
@@ -197,4 +207,6 @@ struct ContentView_Previews: PreviewProvider {
 }
 
     
+
+            
 
