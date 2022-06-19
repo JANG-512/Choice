@@ -173,7 +173,8 @@ struct NextView: View {
                 }
                 .padding()
             }
-        }
+            .colorScheme(.light)
+        } 
         func sendMessage(message: String) {
             withAnimation {
                 messages.append("[USER]" + message)
