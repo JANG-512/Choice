@@ -27,7 +27,7 @@ struct StoryView: View {
                     footer: HStack { Spacer(); Text("현재 접속 중인 셀렉러즈입니다.") }
         
                 ) {
-                    Text("Litte_SPACE_AD")
+                    Text("Little_SPACE_AD")
                     
                         .navigationTitle("환영합니다.")
                 }

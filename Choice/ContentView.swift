@@ -135,7 +135,7 @@ struct NextView: View {
                                 Text(newMessage)
                                     .padding()
                                     .foregroundColor(.white)
-                                    .background(.blue.opacity(0.8))
+                                    .background(.purple.opacity(100))
                                     .cornerRadius(20)
                                     .padding(.horizontal, 16)
                                     .padding(.bottom, 10)
@@ -166,7 +166,14 @@ struct NextView: View {
                     Button {
                         sendMessage(message: messageText)
                     } label: {
-                        Image(systemName: "paperplane.fill")
+                        Text("전송").font(.system(size: 20, weight: .black))
+                        //Image(systemName: "paperplane.fill")
+                            .frame(width: 60, height: 40)
+                            .background(Color.purple.opacity(100))
+                            .foregroundColor(.white)
+                            //.padding(.horizontal, 10)
+                            .cornerRadius(20)
+                        
                     }
                     .font(.system(size: 26))
                     .padding(.horizontal, 10)
