@@ -18,10 +18,10 @@
 		966C593A2817D6D600A3BAAA /* ChoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59392817D6D600A3BAAA /* ChoiceTests.swift */; };
 		966C59442817D6D600A3BAAA /* ChoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59432817D6D600A3BAAA /* ChoiceUITests.swift */; };
 		966C59462817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966C59452817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift */; };
-		96AB5DFB285F27CB00468B27 /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB5DFA285F27CB00468B27 /* BotResponse.swift */; };
 		96C0D75C281F962D00CDB72C /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75B281F962D00CDB72C /* FriendList.swift */; };
 		96C0D75E281F979E00CDB72C /* myself.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0D75D281F979E00CDB72C /* myself.swift */; };
 		96E5C5A8285F50AC00A9B8F8 /* timedate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E5C5A7285F50AC00A9B8F8 /* timedate.swift */; };
+		96EBCFCA2860760D009AE0EC /* BotResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96EBCFC92860760D009AE0EC /* BotResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +57,10 @@
 		966C593F2817D6D600A3BAAA /* ChoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		966C59432817D6D600A3BAAA /* ChoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceUITests.swift; sourceTree = "<group>"; };
 		966C59452817D6D600A3BAAA /* ChoiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		96AB5DFA285F27CB00468B27 /* BotResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BotResponse.swift; path = ../../../../../Users/saram/Documents/BotResponse.swift; sourceTree = "<group>"; };
 		96C0D75B281F962D00CDB72C /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		96C0D75D281F979E00CDB72C /* myself.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myself.swift; sourceTree = "<group>"; };
 		96E5C5A7285F50AC00A9B8F8 /* timedate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timedate.swift; sourceTree = "<group>"; };
+		96EBCFC92860760D009AE0EC /* BotResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BotResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,13 +113,13 @@
 			children = (
 				966C59282817D6D300A3BAAA /* ChoiceApp.swift */,
 				966C592A2817D6D300A3BAAA /* ContentView.swift */,
-				96AB5DFA285F27CB00468B27 /* BotResponse.swift */,
 				96E5C5A7285F50AC00A9B8F8 /* timedate.swift */,
 				964D9077283746190066E39F /* FavoritesView.swift */,
 				964D9079283746220066E39F /* FunFactsView.swift */,
 				96C0D75D281F979E00CDB72C /* myself.swift */,
 				964D9075283745EF0066E39F /* StoryView.swift */,
 				96C0D75B281F962D00CDB72C /* FriendList.swift */,
+				96EBCFC92860760D009AE0EC /* BotResponse.swift */,
 				965F3FE02818FD74008DADEE /* InfoPlist.strings */,
 				966C592C2817D6D600A3BAAA /* Assets.xcassets */,
 				966C592E2817D6D600A3BAAA /* Preview Content */,
@@ -284,9 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96AB5DFB285F27CB00468B27 /* BotResponse.swift in Sources */,
 				964D9076283745EF0066E39F /* StoryView.swift in Sources */,
 				96E5C5A8285F50AC00A9B8F8 /* timedate.swift in Sources */,
+				96EBCFCA2860760D009AE0EC /* BotResponse.swift in Sources */,
 				966C592B2817D6D300A3BAAA /* ContentView.swift in Sources */,
 				964D9078283746190066E39F /* FavoritesView.swift in Sources */,
 				964D907A283746220066E39F /* FunFactsView.swift in Sources */,
