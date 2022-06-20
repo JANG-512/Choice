@@ -166,7 +166,7 @@ struct NextView: View {
                     Button {
                         sendMessage(message: messageText)
                     } label: {
-                        Text("전송").font(.system(size: 20, weight: .black))
+                        Text("전송").font(.system(size: 20, weight: .heavy))
                         //Image(systemName: "paperplane.fill")
                             .frame(width: 60, height: 40)
                             .background(Color.purple.opacity(100))
