@@ -57,7 +57,7 @@ func getBotResponse(message: String) -> String {
         } else if tempMessage.contains("누구세요") {
             return "저는 당신의 셀렉러즈입니다"
         } else if tempMessage.contains("누구세요!") {
-            return "저는 당신의 셀렉러즈입니다"
+            return "저는 당신의 셀렉러즈입니다."
         } else {
             return "접수되었습니다, 답변에 시간이 걸릴 수 있습니다."
 }
