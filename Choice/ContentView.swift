@@ -34,7 +34,7 @@ struct ContentView: View {
                     //NextView 라는 새 view로 이동
                        
                         label: {
-                            Text("로그인")
+                            Text("프로필")
                                 .foregroundColor(.white)
                                 .padding()
                                 .frame(width: 80, height: 80)
