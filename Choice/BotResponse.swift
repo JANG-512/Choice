@@ -12,6 +12,10 @@ func getBotResponse(message: String) -> String {
     
         if tempMessage.contains("안녕하세요") {
             return "안녕하세요, 저는 당신의 셀렉러즈입니다!"
+        } else if tempMessage.contains("안녕") {
+            return "안녕하세요, 어떤 선택을 도와드릴까요?"
+        } else if tempMessage.contains("안녕!") {
+            return "안녕하세요!"
         } else if tempMessage.contains("학교를 갈까 말까") {
             return "그냥 가지 마시는 게 좋을 것 같네요."
         } else if tempMessage.contains("내 이름이 뭐야") {
