@@ -52,6 +52,8 @@ func getBotResponse(message: String) -> String {
             return "일단 쉬어야 할 것 같네요, 충분한 휴식은 일의 원동력이 될 거예요."
         } else if tempMessage.contains("할 게 많은데 쉬고싶어") {
             return "일단 쉬어야 할 것 같네요, 충분한 휴식은 일의 원동력이 될 거예요."
+        } else if tempMessage.contains("친구에게 연락할까요?") {
+            return "지금은 셀렉러즈가 부재중입니다, 나중에 다시 문의하세요."
         } else if tempMessage.contains("너 누구야") {
             return "저는 당신의 셀렉러즈입니다"
         } else if tempMessage.contains("너 누구야?") {

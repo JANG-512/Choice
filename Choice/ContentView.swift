@@ -21,7 +21,7 @@ struct ContentView: View {
         //텍스트의 정렬
                     //.foregroundColor(.white)
         //텍스트의 컬러 지정
-                    Image("purple")
+                    Image("purplenew")
                         .resizable()
                         .frame(width: 500, height: 500, alignment: .center)
 
